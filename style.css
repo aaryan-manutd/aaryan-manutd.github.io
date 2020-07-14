@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.navbar {
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 3rem;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  /* position: fixed; */
+}
+
+.logo {
+  padding-top: 1%;
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+  font-family: "Quicksand";
+}
+
+.navbar-ul {
+  list-style: none;
+  display: flex;
+  height: 3rem;
+}
+
+.navbar-li {
+  padding-top: 3%;
+  padding-right: 2rem;
+  font-family: "Montserrat";
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-a {
+  text-decoration: none;
+  color: white;
+}
+
+.sub-container-1 {
+  height: 100vh;
+  width: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  place-content: center;
+}
+
+.welcome-txt {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 4rem;
+}
+
+.container-1 {
+  height: 60vh;
+  width: 100vw;
+  background: url("mid-1.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container-2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.sub-container-2 {
+  height: 100vh;
+  width: auto;
+  padding-top: 5%;
+  padding-left: 10%;
+  display: grid;
+  grid-template-rows: "1fr 10fr";
+  grid-template-areas:
+    "about "
+    "details";
+}
+
+.about {
+  grid-area: about;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  height: 2rem;
+}
+
+/* .about::after {
+  content: "";
+  height: 0.15rem;
+  display: block;
+  background-color: white;
+  position: absolute;
+  width: 14%;
+  margin-top: 1%;
+} */
+
+.information {
+  grid-area: details;
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-template-areas: "mydetails myphoto";
+}
+.my-details {
+  grid-area: mydetails;
+  color: white;
+  font-weight: 400;
+  font-family: "Quicksand";
+  margin: 25% 10%;
+  justify-content: center;
+}
+
+.my-details-p {
+  font-size: 2rem;
+}
+
+.p-margin {
+  margin-bottom: 10%;
+}
+
+.my-photo {
+  grid-area: myphoto;
+  background: url("vt-2.JPG") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  width: 400px;
+  padding: 10%;
+  margin: 10%;
+}
+
+.container-3 {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  overflow: scroll;
+}
+
+.sub-container-3 {
+  height: 100vh;
+  width: auto;
+  padding-top: 5%;
+ padding-left: 10%;
+  display: grid;
+  grid-template-rows: "1fr 10fr";
+  grid-template-areas:
+    "moments "
+    "moments-photos";
+}
+
+.moments {
+  grid-area: moments;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  height: 2rem;
+}
+
+.moments-div {
+  grid-area: moments-photos;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "friends details2";
+}
+
+.friends {
+  grid-area: friends;
+  background: url("moments-2.jpg") no-repeat center;
+  background-size: contain;
+  height: 500px;
+  width: 400px;
+}
+
+.desc1 {
+  grid-area: details2;
+  font-family: "Quicksand";
+}
+
+.friend-desc-title {
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-size: 2rem;
+  justify-self: start;
+  text-align: left;
+  margin-bottom: 10%;
+}
+
+.container-4 {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  overflow: scroll;
+}
+
+.sub-container-4 {
+  height: 300vh;
+  width: auto;
+  padding-top: 5%;
+  padding-left: 10%;
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  grid-template-areas:
+    "trip-head"
+    "trip-1"
+    "trip-2"
+    "trip-3";
+}
+
+.p-color {
+  color: white;
+}
+.trips-head {
+  grid-area: trip-head;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 10%;
+}
+
+.trips-1 {
+  grid-area: trip-1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 10fr;
+  grid-template-areas:
+    "destination destination"
+    "trip-desc-1 trip-photo-1";
+  margin-bottom: 10%;
+}
+
+.destination-1 {
+  grid-area: destination;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+
+.trip-photo-1 {
+  grid-area: trip-photo-1;
+  background: url("ooty-3.jpeg") no-repeat center;
+  background-size: contain;
+  height: 600px;
+  width: 400px;
+}
+
+.trip-desc-1 {
+  grid-area: trip-desc-1;
+  font-family: "Quicksand";
+  display: grid;
+  place-content: center;
+  margin-right: 10%;
+}
+
+.trips-2 {
+  grid-area: trip-2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 10fr;
+  grid-template-areas:
+    "destination-2 destination-2"
+    "trip-photo-2 trip-desc-2";
+  margin-bottom: 10%;
+}
+
+.destination-2 {
+  grid-area: destination-2;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.trip-photo-2 {
+  grid-area: trip-photo-2;
+  background: url("tada.JPG") no-repeat center;
+  background-size: contain;
+  height: 600px;
+  width: 400px;
+}
+
+.trip-desc-2 {
+  grid-area: trip-desc-2;
+  font-family: "Quicksand";
+  display: grid;
+  place-content: center;
+  margin-right: 10%;
+}
+
+.trips-3 {
+  grid-area: trip-3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 10fr;
+  grid-template-areas:
+    "destination-3 destination-3"
+    "trip-desc-3 trip-photo-3";
+}
+
+.destination-3 {
+  grid-area: destination-3;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.trip-photo-3 {
+  grid-area: trip-photo-3;
+  background: url("mahabalipuram.jpg") no-repeat center;
+  background-size: contain;
+  height: 600px;
+  width: 400px;
+}
+
+.trip-desc-3 {
+  grid-area: trip-desc-3;
+  font-family: "Quicksand";
+  display: grid;
+  place-content: center;
+  margin-right: 10%;
+}
+
+.container-5 {
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.quote {
+  height: 80%;
+  width: auto;
+  display: grid;
+  place-items: center;
+}
+
+.quote-tag {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.contact {
+  height: auto;
+  width: auto;
+  padding-left: 10%;
+  padding-top: 5%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  /* justify-content: center; */
+}
+
+.follow {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.fonts {
+  color: white;
+  margin: 5%;
+}
+
+.font-margin {
+  margin: 5%;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 0.65rem;
+  }
+  .container {
+    width: 100%;
+    height: 400px;
+  }
+  .container-1 {
+    width: 100%;
+    height: 300px;
+  }
+  .container-2 {
+    width: 100%;
+    height: 400px;
+  }
+  .container-3 {
+    width: 100%;
+    height: 400px;
+  }
+  .container-4 {
+    width: 100%;
+    height: 400px;
+  }
+  .container-5 {
+    width: 100%;
+    height: 400px;
+  }
+
+  .welcome-txt {
+    font-size: small;
+  }
+
+  .sub-container-1 {
+    width: 100%;
+    height: 400px;
+    padding: 0px 5%;
+  }
+  .sub-container-2 {
+    width: 100%;
+    height: 400px;
+    padding: 0px 5%;
+  }
+  .sub-container-3 {
+    width: 100%;
+    height: 400px;
+    padding: 0px 5%;
+  }
+  .sub-container-4 {
+    width: 100%;
+    height: 400px;
+    padding: 0px 5%;
+  }
+
+  .navbar {
+    padding-top: 5%;
+  }
+
+  .logo {
+    font-size: small;
+  }
+
+  .navbar-li {
+    font-size: small;
+  }
+
+  .about {
+    padding-top: 5%;
+  }
+
+  .moments {
+    padding-top: 5%;
+  }
+
+  .trips-head {
+    padding-top: 5%;
+  }
+  .contact {
+    height: 30%;
+  }
+
+  .my-details {
+    margin: 0%;
+    padding: 5%;
+  }
+
+  .my-photo {
+    margin: 0%;
+    height: 200px;
+    width: 120px;
+  }
+
+  .friends {
+    margin: 0%;
+    height: 200px;
+    width: 120px;
+  }
+
+  .trip-photo-1 {
+    height: 150px;
+    width: 100px;
+  }
+
+  .trip-photo-2 {
+    height: 150px;
+    width: 100px;
+  }
+
+  .trip-photo-3 {
+    height: 150px;
+    width: 100px;
+  }
+
+  .quote-tag {
+    font-size: 3rem;
+  }
+}
