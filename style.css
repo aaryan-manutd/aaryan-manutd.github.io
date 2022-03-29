@@ -140,7 +140,7 @@
 
 .my-photo {
   grid-area: myphoto;
-  background: url("vt-2.JPG") no-repeat center;
+  background: url("vt-2.jpg") no-repeat center;
   background-size: cover;
   height: 500px;
   width: 400px;
@@ -184,7 +184,7 @@
 
 .friends {
   grid-area: friends;
-  background: url("Myself.JPG") no-repeat center;
+  background: url("Myself.jpg") no-repeat center;
   background-size: cover;
   height: 500px;
   width: 400px;
@@ -294,7 +294,7 @@
 
 .trip-photo-2 {
   grid-area: trip-photo-2;
-  background: url("tada.JPG") no-repeat center;
+  background: url("tada.jpg") no-repeat center;
   background-size: contain;
   height: 600px;
   width: 400px;
